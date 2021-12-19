@@ -336,8 +336,8 @@ export class DaikinApi{
           break;
         case TargetHeatingCoolingState.AUTO:
           requestedData = {
-            hspHome: heatThreshold || deviceData.hspHome,
-            cspHome: coolThreshold || deviceData.cspHome,
+            hspHome: heatThreshold,
+            cspHome: coolThreshold,
           };
           break;
         default:
